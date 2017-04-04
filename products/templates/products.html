@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% load bootstrap_tags %}
+
+    <section id="service" class="home-section text-center bg-gray">
+
+    <div class="heading-about">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="wow bounceInDown" data-wow-delay="0.4s">
+            <div class="section-heading">
+                <h2>Golf Shop</h2>
+                <div class="table-responsive">
+                    <table class="table" style="padding: 0 !important;">
+                        <thead>
+                        <tr>
+                            <th> Image</th>
+                            <th> Name</th>
+                            <th> Brand</th>
+                            <th> Image</th>
+                            <th> Description</th>
+                            <th> Price</th>
+                            <th> Cart</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for product in products %}
+                            <tr>
+                                <td><img height="100" width="100" src="{{ MEDIA_URL }}{{ product.image }}"></td>
+                                <td>{{ product.name }}</td>
+                                <td>{{ product.brand }}</td>
+                                <td>{{ product.image }}</td>
+                                <td>{{ product.description }}</td>
+                                <td>{{ product.price }}</td>
+                                <td><a href="#" )> Buy Now </a></td>
+                                {#                    <td><a href="{% url 'add_to_cart' product.id %}")>Add to Cart</a></td>#}
+                                <td>
+                                    <form method="post" action="{% url 'add_to_cart' product.id %}">
+                                        {% csrf_token %}
+                                        Quantity
+                                        <input name='quantity' type="number" min="1" max="999">
+                                        <button type="submit">Add</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+{% endblock %}

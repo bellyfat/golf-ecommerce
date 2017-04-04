@@ -1,0 +1,6 @@
+env.py
+.idea
+bower_components
+db.sqlite3
+media
+*.pyc

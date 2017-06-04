@@ -2,21 +2,19 @@ from django.contrib import messages, auth
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from Accounts.forms import UserRegistrationForm, UserLoginForm
 from django.template.context_processors import csrf
-from .forms import UserLoginForm, UserRegistrationForm
-
-
-@login_required(login_url='/accounts/login')
-def profile(request):
-    return render(request, 'profile.html')
-
 
 # Create your views here.
 def logout(request):
     auth.logout(request)
-    messages.success(request, 'You have logged out')
+    messages.success(request, 'You have successfully logged out')
     return redirect(reverse('index'))
 
+
+@login_required(login_url='/Accounts/login')
+def profile(request):
+    return render(request, 'profile.html')
 
 
 def login(request):
@@ -28,7 +26,7 @@ def login(request):
 
             if user is not None:
                 auth.login(request, user)
-                messages.error(request, "You have logged in")
+                messages.error(request, "You have successfully logged in")
 
                 if request.GET and 'next' in request.GET:
                     next = request.GET['next']
@@ -36,7 +34,7 @@ def login(request):
                 else:
                     return redirect(reverse('profile'))
             else:
-                form.add_error(None, "Your username or password was not recognised")
+                form.add_error(None, "Your username and/or password was not recognised")
 
     else:
         form = UserLoginForm()
@@ -44,7 +42,6 @@ def login(request):
     args = {'form': form, 'next': request.GET['next'] if request.GET and 'next' in request.GET else ''}
     args.update(csrf(request))
     return render(request, 'login.html', args)
-
 
 
 def register(request):
@@ -62,7 +59,7 @@ def register(request):
                 return redirect(reverse('profile'))
 
             else:
-                messages.error(request, "Unable to log you in at this time!")
+                messages.error(request, "unable to log you in at this time!")
 
     else:
         form = UserRegistrationForm()

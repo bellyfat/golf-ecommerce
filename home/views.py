@@ -5,9 +5,12 @@ from django.template.context_processors import csrf
 
 def get_index(request):
     args = {}
-    args.update(csrf(request))
-    return render(request, "index.html", args)
+    args
+    return render(request, "index.html")
 
 
 def handle_message_form(request):
     return render(request, "message.html")
+
+def get_teeTime(request):
+    return render(request, "teetime.html")

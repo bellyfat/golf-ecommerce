@@ -434,7 +434,15 @@ hr {
 ============================ */
 
 .service-icon {
-	margin-bottom: 20px;
+    position: relative;
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin-bottom: 20px;
+
 }	
 
 

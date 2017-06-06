@@ -38,5 +38,5 @@ urlpatterns = [
     url(r'^categories/', include(categories_urls)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
     url(r'^message/', handle_message_form, name='send_message'),
-    url(r'^teetime/', get_teeTime, name='teetime')
+    url(r'^teetime/', get_teeTime, name='teetime'),
 ]

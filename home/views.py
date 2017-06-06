@@ -12,5 +12,10 @@ def get_index(request):
 def handle_message_form(request):
     return render(request, "message.html")
 
+
+def loginMembers(request):
+    return render(request, "login.html")
+
+
 def get_teeTime(request):
     return render(request, "teetime.html")

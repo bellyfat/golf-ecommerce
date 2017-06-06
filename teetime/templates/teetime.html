@@ -2,10 +2,10 @@
 {% load bootstrap_tags %}
 {% block content %}
 
-    <div class="theTeetime">
-        <h2> Request a Tee Time Online </h2>
-        <div class="teeTimeForm">
-            <form>
+
+        <h2 class="teeRequest"> Request a Tee Time Online </h2>
+        <div>
+            <form class="teeTimeForm" >
                 <p>
                     First Name:<br>
                     <input type="text" name="firstname"><br>
@@ -21,7 +21,8 @@
                     <input type="text" name="golfers"><br>
                     <button type="button"> Submit </button>
                 </p>
+
             </form>
         </div>
-    </div>
+
 {% endblock %}

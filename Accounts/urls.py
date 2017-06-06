@@ -1,7 +1,6 @@
 from django.conf.urls import url
 from .views import logout, profile, login, register
-from django.contrib.auth.views import password_reset, password_reset_done, password_reset_confirm, \
-    password_reset_complete
+from django.contrib.auth.views import password_reset, password_reset_done, password_reset_confirm, password_reset_complete
 
 urlpatterns = [
     url(r'^register', register, name='register'),

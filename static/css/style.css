@@ -593,7 +593,7 @@ Parallax
 	background-image: url(../img/parallax/1.jpg);
 }
 
-#parallax1:after {	
+#parallax1:after {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -606,12 +606,12 @@ Parallax
 }
 
 
-#parallax2{	
+#parallax2{
 	background-image: url(../img/parallax/2.jpg);
 
 }
 
-#parallax2:after  {	
+#parallax2:after  {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -871,5 +871,28 @@ Parallax
     margin-left: 75px;
     margin-top: 50px;
     color: #207c60;
+
+}
+.passwordReset {
+    margin-left: 175px;
+}
+
+
+
+#div_id_username_or_email{
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 300px;
+}
+#div_id_password.form-group {
+    margin-left: 100px;
+    width: 300px;
+
+}
+
+button.btn.btn-primary{
+    margin-left: 100px;
+    width: 300px;
+
 
 }

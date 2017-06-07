@@ -10,17 +10,3 @@ def get_teeTime(request):
         return render (redirect(to='teetimeMessage.html'))
 
 
-#
-#
-# def sendteeTime(request):
-#     if request.method == "POST":
-#         form = get_teeTime(request.POST, request.FILES)
-#         if form.is_valid():
-#             post = form.save(commit=False)
-#             post.author = request.user
-#             post.published_date = timezone.now()
-#             post.save()
-#             return redirect(post_detail, post.pk)
-#     else:
-#         form = get_teeTime()
-#     return render(request, 'teetime.html', {'form': form})

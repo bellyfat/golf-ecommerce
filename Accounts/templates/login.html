@@ -11,7 +11,7 @@
                 <form role="form" method="post" action="{% url 'login' %}">
                 {% endif %}
 
-                    <legend>Login</legend>
+                    <legend>Member Login</legend>
                     {% csrf_token %}
                     {{ form | as_bootstrap }}
 

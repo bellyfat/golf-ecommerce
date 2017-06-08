@@ -2,27 +2,40 @@
 {% load bootstrap_tags %}
 {% block content %}
 
+    <h2 class="teeRequest"> Request a Tee Time Online </h2>
+<div>
+    <form class="teeTimeForm" action="teetimeMessage.html" method="post" role=form">
+{#        {% csrf_token %}#}
+        <p>
+            First Name:
+            <br>
+            <input type="text" name="firstname">
+            <br> Last Name:
+            <br>
+            <input type="text" name="lastname">
+            <br> Desired DAY of Tee Time:
+            <br>
+            <input type="date" name="date">
+            <br> Desired HOUR Tee Time:
+            <br>
+            <input type="time" name="time">
+            <br>
+            <br> Number of Golfers:
+            <br>
+            <input type="number" name="golfers">
+            <br> Contact Number:
+            <br>
+            <input type="email" name="contact">
+            <br> E-mail:
+            <br>
+            <input type="text" name="email">
+            <br>
+            <button type="button"> Submit </button>
 
-        <h2 class="teeRequest"> Request a Tee Time Online </h2>
-        <div>
-            <form class="teeTimeForm" >
-                <p>
-                    First Name:<br>
-                    <input type="text" name="firstname"><br>
-                    Last Name:<br>
-                    <input type="text" name="lastname"><br>
-                    Desired Date:<br>
-                    <input type="text" name="date"><br>
-                    Desired Tee Time:<br>
-                    <input type="text" name="firstchoice"><br>
-                    Second Choice:<br>
-                    <input type="text" name="secondchoice"><br>
-                    Number of Golfers:<br>
-                    <input type="text" name="golfers"><br>
-                    <button type="button"> Submit </button>
-                </p>
 
-            </form>
-        </div>
+        </p>
+    </form>
+</div>
+
 
 {% endblock %}

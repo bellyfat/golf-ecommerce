@@ -17,5 +17,3 @@ def loginMembers(request):
     return render(request, "login.html")
 
 
-def get_teeTime(request):
-    return render(request, "teetime.html")

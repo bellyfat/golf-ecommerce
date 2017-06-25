@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from django.template.context_processors import csrf
 
 # I will create my views here
@@ -15,5 +16,3 @@ def handle_message_form(request):
 
 def loginMembers(request):
     return render(request, "login.html")
-
-

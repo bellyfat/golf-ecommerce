@@ -24,7 +24,7 @@ from settings import MEDIA_ROOT
 from django.views import static
 from blog import urls as blog_urls
 from home.views import handle_message_form
-from teetime.views import get_teeTime
+from teetime.views import get_teeTime, requested_teeTime
 
 
 urlpatterns = [
@@ -39,5 +39,6 @@ urlpatterns = [
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
     url(r'^message/', handle_message_form, name='send_message'),
     url(r'^teetime/', get_teeTime, name='teetime'),
+    url(r'^teetime/request', requested_teeTime, name='request')
 
 ]

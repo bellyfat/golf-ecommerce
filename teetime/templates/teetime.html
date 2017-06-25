@@ -4,8 +4,8 @@
 
     <h2 class="teeRequest"> Request a Tee Time Online </h2>
 <div>
-    <form class="teeTimeForm" action="teetimeMessage.html" method="post" role=form">
-{#        {% csrf_token %}#}
+    <form class="teeTimeForm" action="{% url 'request' %}" method="post" role=form">
+
         <p>
             First Name:
             <br>
@@ -25,15 +25,16 @@
             <input type="number" name="golfers">
             <br> Contact Number:
             <br>
-            <input type="email" name="contact">
+            <input type="number" name="contact">
             <br> E-mail:
             <br>
-            <input type="text" name="email">
+            <input type="email" name="email">
             <br>
-            <button type="button"> Submit </button>
+            <button type="submit" class="btn btn-success"> Submit </button>
 
 
         </p>
+        {% csrf_token %}
     </form>
 </div>
 

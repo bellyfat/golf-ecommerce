@@ -14,5 +14,5 @@ def requested_teeTime(request):
         return render(request, "teetimeMessage.html")
 
     else:
-        print "Please contact the golf shop directly."
+        print ('Please call the Golf Shop')
 

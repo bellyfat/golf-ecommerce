@@ -27,6 +27,7 @@ from home.views import handle_message_form
 from teetime.views import get_teeTime, requested_teeTime
 
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include(accounts_urls)),
@@ -36,9 +37,9 @@ urlpatterns = [
     url(r'^cart/', include(cart_urls)),
     url(r'^blog/', include(blog_urls)),
     url(r'^categories/', include(categories_urls)),
-    url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
     url(r'^message/', handle_message_form, name='send_message'),
     url(r'^teetime/', get_teeTime, name='teetime'),
-    url(r'^teetime/request', requested_teeTime, name='request')
+    url(r'^request/', requested_teeTime, name='request')
 
 ]

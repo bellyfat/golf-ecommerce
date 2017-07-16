@@ -11,6 +11,16 @@ This website was built for a hypothetical golf club. It serves as a sample websi
  - Password Reset
  - Contact Us Form
  - Tee Time Reservation
+ 
+###TECH/FRAMEWORKS/LIBRARIES USED
+ -HTML
+ -CSS
+ -Python
+ -Django
+ -Bootstrap
+ -Stripe
+ -Jinja2
+ -SQLite
 
 ###Usage
 

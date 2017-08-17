@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+legend {
+	margin-left: 25px;
+}
+
 .containerAbout {
 	box-sizing: border-box;
 }

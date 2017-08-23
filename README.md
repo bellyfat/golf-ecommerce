@@ -85,5 +85,17 @@ The issue with responsiveness on smaller devices is being corrected.
 ###Getting Help
 If encountering bugs, please e-mail cmmc [at] protonmail [dot] ch
 
+
 ###License
 MIT &#169; 2017 Colleen McAuley
+
+###Acknowledgements and Special Thanks
+- Code Institute Class 
+- Rosario
+- Brian
+- Richard
+- Niel
+- Tiff
+- Denise
+- Jim
+- "Squadfree Template" from BootstrapMade.com

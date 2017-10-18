@@ -15,7 +15,7 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 
-@login_required(login_url="/login")
+@login_required(login_url="/Accounts/login")
 def user_cart(request):
     cartItems = CartItem.objects.filter(user=request.user)
     total = 0
@@ -60,7 +60,7 @@ def user_cart(request):
 
 
 
-@login_required(login_url="/login")
+@login_required(login_url="/Accounts/login")
 def add_to_cart(request, id):
     product = get_object_or_404(Product, pk=id)
     quantity=int(request.POST.get('quantity'))

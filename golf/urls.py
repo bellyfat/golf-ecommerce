@@ -30,7 +30,7 @@ from teetime.views import get_teeTime, requested_teeTime
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^accounts/', include(accounts_urls)),
+    url(r'^Accounts/', include(accounts_urls)),
     url(r'^user/', include(accounts_urls)),
     url(r'^$', get_index, name='index'),
     url(r'^products/', include(products_urls)),

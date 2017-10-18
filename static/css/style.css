@@ -893,9 +893,40 @@ Parallax
 
 }
 
+#div_id_password.form-group {
+    margin-left: 100px;
+    width: 300px;
+
+}
+
 button.btn.btn-primary{
     margin-left: 100px;
     width: 300px;
 
+}
+
+#div_id_title.form-group {
+    margin-left: 10%;
+    width: 60%;
 
 }
+
+#div_id_content.form-group {
+    margin-left: 10%;
+    width: 60%;
+
+}
+
+#div_id_image.form-group {
+    margin-left: 10%;
+    width: 20%;
+
+}
+
+button.btn.btn-info{
+    margin-left: 10%;
+    width: 10%;
+
+}
+
+

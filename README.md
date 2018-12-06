@@ -1,9 +1,9 @@
-###GOLF WEBSITE
+#GOLF WEBSITE
 
-###INTRO
+##INTRO
 This website was built for a hypothetical golf club. It serves as a sample website for recreational sports clubs such as golf and yacht clubs.
 
-###FEATURES
+##FEATURES
 
  - E-commerce golf shop
  - Blog
@@ -12,7 +12,7 @@ This website was built for a hypothetical golf club. It serves as a sample websi
  - Contact Us Form
  - Tee Time Reservation
  
-###TECH/FRAMEWORKS/LIBRARIES USED 
+##TECH/FRAMEWORKS/LIBRARIES USED 
 
  - HTML
  - CSS
@@ -23,7 +23,7 @@ This website was built for a hypothetical golf club. It serves as a sample websi
  - Jinja2
  - SQLite
 
-###USAGE
+##USAGE
 
     <form class="teeTimeForm">
     <p>
@@ -52,7 +52,7 @@ This website was built for a hypothetical golf club. It serves as a sample websi
 
 Through the tee time form, members and users can make a tee time through the website.
 
-###TESTS
+##TESTS
 
 Website was tested in the following browsers:
 
@@ -83,14 +83,14 @@ Website was tested for responsiveness on:
 
 The issue with responsiveness on smaller devices is being corrected.
 
-###Getting Help
+##Getting Help
 If encountering bugs, please e-mail cmmc [at] protonmail [dot] ch
 
 
-###LICENSE
+##LICENSE
 MIT &#169; 2017 Colleen McAuley
 
-###ACKNOWLEDGMENTS AND SPECIAL THANKS
+##ACKNOWLEDGMENTS AND SPECIAL THANKS
 - Code Institute Class 
 - Rosario
 - Brian

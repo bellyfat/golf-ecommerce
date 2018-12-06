@@ -2,8 +2,9 @@
 {% load bootstrap_tags %}
 {% block content %}
 
+<section id="#" class="home-section text-center">
     <h2 class="teeRequest"> Request a Tee Time Online </h2>
-<div>
+<div class="container">
     <form class="teeTimeForm" action="{% url 'request' %}" method="post" role=form">
 
         <p>
@@ -37,6 +38,7 @@
         {% csrf_token %}
     </form>
 </div>
+</section>
 
 
 {% endblock %}

@@ -33,6 +33,7 @@ urlpatterns = [
     url(r'^Accounts/', include(accounts_urls)),
     url(r'^user/', include(accounts_urls)),
     url(r'^$', get_index, name='index'),
+    url(r'^contact/', get_index, name='index'),
     url(r'^products/', include(products_urls)),
     url(r'^cart/', include(cart_urls)),
     url(r'^blog/', include(blog_urls)),

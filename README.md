@@ -1,4 +1,4 @@
-# GOLF WEBSITE
+ # GOLF WEBSITE :golf: :palm_tree:
 
 ## INTRO
 This website was built for a hypothetical golf club. It serves as a sample website for recreational sports clubs such as golf and yacht clubs.
